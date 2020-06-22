@@ -28,7 +28,30 @@ base_github_url = "https://github.com/awslabs/aws-well-architected-labs/tree/mas
 base_raw_github_url = "https://raw.githubusercontent.com/awslabs/aws-well-architected-labs/master/"
 #{{% siteparam "base_github_url" %}}
 
-
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      decimals = -1
+      keepCSS2 = true
+    [minify.tdewolff.html]
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepWhitespace = false
+    [minify.tdewolff.js]
+    [minify.tdewolff.json]
+    [minify.tdewolff.svg]
+      decimals = -1
+    [minify.tdewolff.xml]
+      keepWhitespace = false
 
 # For search functionality
 [outputs]
