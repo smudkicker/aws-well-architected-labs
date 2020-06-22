@@ -24,21 +24,23 @@ Notez que certains de ces paramètres sont expliqués en détails dans d'autres 
   showVisitedLinks = false
   # Désactive la fonction de recherche. Une valeur à true cache la barre de recherche.
   disableSearch = false
-  # Par défaut, le cache Javascript et CSS est automatiquement vidé lorsqu'une nouvelle version du site est générée.
+  # Par défaut, le cache Javascript et CSS est automatiquement vidé lorsqu'une nouvelle version du site est générée. 
   # Utilisez ce paramètre lorsque vous voulez désactiver ce comportement (c'est parfois incompatible avec certains proxys)
   disableAssetsBusting = false
   # Utilisez ce paramètre pour désactiver le bouton copy-to-clipboard pour le code formatté sur une ligne.
   disableInlineCopyToClipBoard = false
-  # Un titre est défini par défaut lorsque vous utilisez un raccourci dans le menu. Utilisez ce paramètre pour le cacher.
+  # Un titre est défini par défaut lorsque vous utilisez un raccourci dans le menu. Utilisez ce paramètre pour le cacher. 
   disableShortcutsTitle = false
+  # Si défini à true, empêche Hugo d'inclure le module "mermaid" s'il n'est pas nécessaire (réduira les temps de chargement et le trafic)
+  disableMermaid = false
+  # Spécifie l'emplacement distant du mermaid js
+  mermaidURL = "https://unpkg.com/mermaid@8.4.5/dist/mermaid.min.js"
   # Quand vous utilisez un site multi-langue, utilisez ce paramètre pour désactiver le bouton de changement de langue.
   disableLanguageSwitchingButton = false
   # Ordonne les sections dans menu par poids ("weight") ou titre ("title"). Défaut à "weight"
   ordersectionsby = "weight"
   # Utilisez ce paramètre pour modifier le schéma de couleur du site. Les valeurs par défaut sont "red", "blue", "green".
   themeVariant = ""
-  # Fournissez une liste de fichiers css personnalisés à charger par rapport depuis le dossier `static/` à la racine du site.
-  custom_css = ["css/foo.css", "css/bar.css"]
 ```
 
 ## Activer la recherche {#activer-recherche}
@@ -52,5 +54,5 @@ home = [ "HTML", "RSS", "JSON"]
 
 Le thème *Learn* utilise les dernières améliorations d'Hugo pour générer un fichier d'index JSON, prêt à être consommé par le moteur de recherche lunr.js.
 
-> Hugo génère lunrjs index.json à la racine du dossier `public`.
+> Hugo génère lunrjs index.json à la racine du dossier `public`. 
 > Quand vous générez le site avec `hugo server`, Hugo génère le fichier en mémoire, il n'est donc pas disponible sur le disque.
