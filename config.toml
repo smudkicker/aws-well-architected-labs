@@ -56,7 +56,7 @@ disableMermaid = true
     [minify.tdewolff.xml]
       keepWhitespace = false
 
-For search functionality
+## For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
